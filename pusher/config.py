@@ -28,7 +28,7 @@ class Config(object):
     :param app_id: The Pusher application ID
     :param key: The Pusher application key
     :param secret: The Pusher application secret
-    :param ssl: Whenever to use SSL or plain HTTP 
+    :param ssl: Whenever to use SSL or plain HTTP
     :param host: Used for custom host destination
     :param port: Used for custom port destination
     :param cluster: Convention for other clusters than the main Pusher-one.

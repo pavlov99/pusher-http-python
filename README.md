@@ -3,7 +3,7 @@ Pusher REST Python library
 
 ![Travis-CI](https://travis-ci.org/pusher/pusher-rest-python.svg)
 
-*status: Alpha*
+![Development Status](https://pypip.in/status/jsonapi/badge.svg)
 
 This is the new python library that will replace the "pusher" module once it
 becomes stable enough.
@@ -46,14 +46,14 @@ You can then trigger events to channels. Channel and event names may only
 contain alphanumeric characters, `-` and `_`:
 
 ```python
-pusher.trigger('a_channel', 'an_event', {'some': 'data'})
+pusher.trigger(['a_channel'], 'an_event', {'some': 'data'})
 ```
 
 You can also specify `socket_id` as a separate argument, as described in
 <http://pusher.com/docs/duplicates>:
 
 ```python
-pusher.trigger('a_channel', 'an_event', {'some': 'data'}, socket_id)
+pusher.trigger(['a_channel'], 'an_event', {'some': 'data'}, socket_id)
 ```
 
 ### Additional options
@@ -72,4 +72,3 @@ License
 -------
 
 Copyright (c) 2014 Pusher Ltd. See LICENSE for details.
-
